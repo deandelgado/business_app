@@ -1,0 +1,30 @@
+<center><h1>Application for Business Account</h1>
+
+<table>
+  <thead>
+    <tr>
+      <tr>Company Name</tr>
+      <tr>Tel</tr>
+      <tr>Fax</tr>
+      <tr>Email</tr>
+      <tr>Business Address</tr>
+      <tr>City</tr>
+      <tr>State</tr>
+      <tr>Zip Code</tr>
+      <tr>D-U-N-S#</tr>
+      <tr>Tax ID#</tr>
+      <tr>Annual Sales</tr>
+      <tr>Number of Employees</tr>
+      <tr>Exfreight Sales Rep</tr>
+    </tr>
+  </thread>
+
+  <tbody>
+    <% @forms.each do |form| %>
+      <tr>
+        <td><%= form.company_name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</center>
