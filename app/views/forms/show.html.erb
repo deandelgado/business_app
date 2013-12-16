@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company Name:</strong>
+  <%= @form.company_name %>
+</p>
+
+<p>
+  <strong>Tel:</strong>
+  <%= @form.tel %>
+</p>
+
+<p>
+  <strong>Fax:</strong>
+  <%= @form.fax %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @form.email %>
+</p>
+
+<p>
+  <strong>Business address:</strong>
+  <%= @form.business_address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @form.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @form.state %>
+</p>
+
+<p>
+  <strong>Zip code:</strong>
+  <%= @form.zip_code %>
+</p>
+
+<p>
+  <strong>D u n s:</strong>
+  <%= @form.d_u_n_s %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @form.tax_id %>
+</p>
+
+<p>
+  <strong>Annual sales:</strong>
+  <%= @form.annual_sales %>
+</p>
+
+<p>
+  <strong>Number of employees:</strong>
+  <%= @form.number_of_employees %>
+</p>
+
+<p>
+  <strong>Exfreight sales rep:</strong>
+  <%= @form.exfreight_sales_rep %>
+</p>
++
+<p><%= link_to "Printable Form (PDF)", form_path(@form, format: "pdf") %></p>
+<%= link_to 'Edit', edit_form_path(@form) %> |
+<%= link_to 'Back', forms_path %>

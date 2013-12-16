@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20131211192244) do
     t.string "tel"
     t.string "fax"
     t.string "email"
-    t.string "business_adress"
+    t.string "business_address"
     t.string "city"
     t.string "state"
     t.string "zip_code"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20131211192244) do
     t.string "tax_id"
     t.string "annual_sales"
     t.string "number_of_employees"
-    t.string "exrreight_sales_rep"
+    t.string "exfreight_sales_rep"
   end
 
 end

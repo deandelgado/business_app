@@ -5,7 +5,7 @@ class Form < ActiveRecord::Migration
       f.string :tel
       f.string :fax
       f.string :email
-      f.string :business_adress
+      f.string :business_address
       f.string :city
       f.string :state
       f.string :zip_code
@@ -13,7 +13,9 @@ class Form < ActiveRecord::Migration
       f.string :tax_id
       f.string :annual_sales
       f.string :number_of_employees
-      f.string :exrreight_sales_rep
+      f.string :exfreight_sales_rep
+
+      t.timestamps
     end
   end
 end

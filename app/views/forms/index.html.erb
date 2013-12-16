@@ -1,4 +1,4 @@
-<center><h1>Application for Business Account</h1>
+<h1>Application for Business Account</h1>
 
 <table>
   <thead>
@@ -23,8 +23,23 @@
     <% @forms.each do |form| %>
       <tr>
         <td><%= form.company_name %></td>
+        <td><%= form.tel %></td>
+        <td><%= form.fax %></td>
+        <td><%= form.email %></td>
+        <td><%= form.business_address %></td>
+        <td><%= form.city %></td>
+        <td><%= form.state %></td>
+        <td><%= form.zip_code %></td>
+        <td><%= form.d_u_n_s %></td>
+        <td><%= form.tax_id %></td>
+        <td><%= form.annual_sales %></td>
+        <td><%= form.number_of_employees %></td>
+        <td><%= form.exfreight_sales_rep %></td>
+        <td><%= link_to 'Show', form %></td>
+        <td><%= link_to 'Edit', edit_form_path(form) %></td>
+        <td><%= link_to 'Destroy', form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-</center>
+<%= link_to 'New Form', new_form_path %>
