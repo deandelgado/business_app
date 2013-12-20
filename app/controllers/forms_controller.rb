@@ -10,10 +10,8 @@ class FormsController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-        pdf = Prawn::Document.new
-        pdf.text "Hello World"
-        send_data pdf.render,
-                            # filename: "form_#{@forms.form_number}.pdf",
+        pdf = FormPdf.new(@form)
+        send_data pdf.render, filename: "form_#{@form.company_name}.pdf",
                               type: "application/pdf",
                               disposition: "inline"
       end
